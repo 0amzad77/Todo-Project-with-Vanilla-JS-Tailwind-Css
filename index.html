@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="src/fav_icon/to-do-list.png"
+      type="image/x-icon"
+    />
+    <title>todo</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto">
+      <div class="h-screen">
+        <form
+          action=""
+          id="task-Form"
+          class="flex items-center justify-center p-6 gap-3"
+        >
+          <input
+            type="text"
+            id="task-Input"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-xl rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="What To Do?"
+            required
+          />
+          <button
+            type="submit"
+            class="text-white bg-linear-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-linear-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-base text-xl px-4 py-3.5 text-center leading-5"
+          >Add</button>
+        </form>
+        <ul id="todo-list" class="p-6 space-y-3"></ul>
+        <div id="pagination" class="p-6 flex items-center justify-center gap-2"></div>
+        <div id="noTodos" class="p-6 flex flex-col items-center justify-center">
+          <div>
+            <h2 class="text-2xl font-semibold">
+              It's a Good day.No todos left...
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
